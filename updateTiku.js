@@ -235,7 +235,7 @@ function CreateAndInsert(liArray){
           tiMu = tiMu.replace(/____/g, "");
 		      tiMu = tiMu.replace(/\[单选题\]/g,"");
 		      ZiXingTiArray.forEach(item=>{
-           	 if (tiMu == tiMu.replace(/\s/g, "")) { //如果是特殊题目     
+           	 if (item == tiMu.replace(/\s/g, "")) { //如果是特殊题目     
                     tiMu = tiMu + timu_zixing; //字形题在题目后面添加第一选项
                    }
             });
@@ -261,7 +261,7 @@ function CreateAndInsert(liArray){
            tiMu = tiMu.replace(/____/g, "");
            tiMu = tiMu.replace(/\[单选题\]/g,"");
            ZiXingTiArray.forEach(item=>{
-           	 if (tiMu == tiMu.replace(/\s/g, "")) { //如果是特殊题目     
+           	 if (item == tiMu.replace(/\s/g, "")) { //如果是特殊题目     
                     tiMu = tiMu + timu_zixing; //字形题在题目后面添加第一选项
                    }
             });
